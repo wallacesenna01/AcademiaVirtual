@@ -1,11 +1,8 @@
 package com.wallace.artur.Academia.Virtual.controller;
 
-import com.wallace.artur.Academia.Virtual.domain.Course;
 import com.wallace.artur.Academia.Virtual.dtos.CourseDTO;
-import com.wallace.artur.Academia.Virtual.dtos.CourseListDTO;
 import com.wallace.artur.Academia.Virtual.dtos.CourseUpdateDTO;
 import com.wallace.artur.Academia.Virtual.services.CourseService;
-import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +12,6 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 @RestController
 @RequestMapping("/courses")
