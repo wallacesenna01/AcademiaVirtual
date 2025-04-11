@@ -2,7 +2,6 @@ package com.wallace.artur.Academia.Virtual.services;
 
 import com.wallace.artur.Academia.Virtual.domain.Course;
 import com.wallace.artur.Academia.Virtual.dtos.CourseDTO;
-import com.wallace.artur.Academia.Virtual.dtos.CourseListDTO;
 import com.wallace.artur.Academia.Virtual.dtos.CourseUpdateDTO;
 import com.wallace.artur.Academia.Virtual.repositories.CourseRepository;
 import jakarta.persistence.EntityNotFoundException;
