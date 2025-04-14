@@ -1,6 +1,5 @@
 package com.wallace.artur.Academia.Virtual.controller;
 
-import com.wallace.artur.Academia.Virtual.domain.Aluno;
 import com.wallace.artur.Academia.Virtual.dtos.AlunoCreateDTO;
 import com.wallace.artur.Academia.Virtual.dtos.AlunoDTO;
 import com.wallace.artur.Academia.Virtual.services.AlunoService;
@@ -15,6 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/alunos")
+@CrossOrigin("*")
 public class AlunoController {
 
     private final AlunoService alunoService;

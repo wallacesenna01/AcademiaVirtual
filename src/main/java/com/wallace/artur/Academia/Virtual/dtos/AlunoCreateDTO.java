@@ -8,7 +8,8 @@ public record AlunoCreateDTO(
         String name,
         String email,
         String cpf,
-        @JsonFormat(pattern = "dd/MM/yyyy") LocalDate birthday,
+        @JsonFormat(pattern = "yyyy-MM-dd")
+        LocalDate birthday,
         String phone
 ) {
 }
