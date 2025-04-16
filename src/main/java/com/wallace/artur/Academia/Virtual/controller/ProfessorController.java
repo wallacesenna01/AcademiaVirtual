@@ -3,7 +3,6 @@ package com.wallace.artur.Academia.Virtual.controller;
 import com.wallace.artur.Academia.Virtual.dtos.ProfessorCreateDTO;
 import com.wallace.artur.Academia.Virtual.dtos.ProfessorPublicDTO;
 import com.wallace.artur.Academia.Virtual.services.ProfessorService;
-import jakarta.persistence.GeneratedValue;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/professores")
-@CrossOrigin("*")
+
 public class ProfessorController {
 
     private final ProfessorService professorService;

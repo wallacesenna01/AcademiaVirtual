@@ -53,6 +53,7 @@ public class UserServiceImp implements UserService {
             throw new DuplicateTupleException("User already exists");
         }
         encodePassword(user);
+        System.out.println("Usuário encontrado com e-mail? " + possibleUser);
         return userRepository.save(user);
     }
 

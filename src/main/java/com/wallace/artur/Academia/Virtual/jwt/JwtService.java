@@ -4,6 +4,7 @@ import com.wallace.artur.Academia.Virtual.AcessToken;
 import com.wallace.artur.Academia.Virtual.User.User;
 import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.crypto.SecretKey;
 import java.time.LocalDateTime;
@@ -12,6 +13,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+@Service
 public class JwtService {
 
     @Autowired
@@ -19,7 +21,7 @@ public class JwtService {
 
     public AcessToken generateToken(User user) {
 
-        SecretKey key = keyGenerator.getKey();
+        var key = keyGenerator.getKey();
         var expiration = expirationDate();
         var claims = generateTokenClaims(user);
 

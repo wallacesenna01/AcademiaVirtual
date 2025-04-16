@@ -6,5 +6,4 @@ public interface UserService {
     User getByEmail(String email);
     AcessToken authenticate(String email, String password);
     User save(User user);
-
 }

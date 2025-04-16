@@ -14,7 +14,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/alunos")
-@CrossOrigin("*")
+
 public class AlunoController {
 
     private final AlunoService alunoService;

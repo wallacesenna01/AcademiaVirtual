@@ -2,20 +2,20 @@ package com.wallace.artur.Academia.Virtual;
 
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class AcessToken {
 
-    private String AcessToken;
+    private String acessToken;
 
     public AcessToken(String acessToken) {
-        AcessToken = acessToken;
+        this.acessToken = acessToken;
     }
 
     public String getAcessToken() {
-        return AcessToken;
+        return acessToken;
     }
 
     public void setAcessToken(String acessToken) {
-        AcessToken = acessToken;
+        this.acessToken = acessToken;
     }
 }

@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/users")
-@CrossOrigin("*")
+
 public class UserSimpleController {
 
     private final UserSimpleService userSimpleService;
